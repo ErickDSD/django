@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Compiled and minified Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="viewport" href="css/footer.css">
+  <link href="css/home/homesectionimg.css" rel="stylesheet" type="text/css"/>
+  <link href="css/home/movie/section_movie.css"  rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="media/home/img_logo/iuaf.png" />
+
+  <!--script-->
+
+  <title>{% block title %} IUAF {% endblock %}</title>
+  <!--<script src="js/home-section-img.js"></script>-->
+</head>
+<body style="margin:0; padding:0; height: 100%;">
+  <header class="sticky-top">
+    <!-- logo,nombre, buscador -->
+    <nav class="navbar navbar-light " style="background-color: white;">
+      <div class="container">
+        <a class="navbar-brand" style="padding-right:200px;" href="index.php">
+          <img src="media/home/img_logo/logo000.jpg" width="40" height="40" class="d-inline-block align-top" alt="">
+          IUAF
+        </a>
+      </div>
+    </nav>
+    <!--menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <!--<a class="navbar-brand" href="./"><b>MYSITE</b></a>-->
+          <a class="navbar-brand" src="media/home/imagen_logo/logo000.jpg" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+
+            <ul class="navbar-nav mr-auto">
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Ofertas Educativas
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="cod/mod/menu/ofertas-educativas/maestrias.php">Maestría</a>
+                  <a class="dropdown-item" href="cod/mod/menu/ofertas-educativas/doctorado.php">Doctorado</a>
+                  <a class="dropdown-item" href="cod/mod/menu/ofertas-educativas/iuaf-en-tu-empresa.php">IUAF en tu empresa</a>
+                  <a class="dropdown-item" href="cod/mod/menu/ofertas-educativas/cursos-talleres-seminarios.php">Cursos, Talleres y Seminarios</a>
+                </div>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Nuestro Instituto
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Historia</a>
+                  <a class="dropdown-item" href="cod/mod/menu/nuestro-instituto/quienes-somos.php">Quienes somos?</a>
+                  <a class="dropdown-item" href="cod/mod/menu/nuestro-instituto/diplomados.php">Diplomados</a>
+                  <a class="dropdown-item" href="cod/mod/menu/nuestro-instituto/ubicacion.php">Ubicación</a>
+                  <a class="dropdown-item" href="cod/mod/menu/nuestro-instituto/mision-objetivo-filosofia.php">Misión / Objetivos / Filosofía Educativa</a>
+                  <!--<a class="dropdown-item" href="../nuestro-instituto/reglamentos.php">Reglamentos</a>-->
+                  <a class="dropdown-item" href="cod/mod/menu/nuestro-instituto/nuestros-profesores.php">Nuestros Profesores</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cod/mod/menu/admisiones/admisiones.php">Admisiones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cod/mod/menu/incubadora-de-negocios/incuaf.php">Incubadora de negocios</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Estudiantes
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="https://sistema.inuaf.com.mx/login">Sistema IUAF</a>
+                  <!--<a class="dropdown-item" href="cod/mod/menu/estudiantes/calendario.php">Calendario</a>-->
+                  <a class="dropdown-item" href="cod/mod/menu/estudiantes/sistema-de-pagos.php">Sistema de Pagos</a>
+                </div>
+              </li>
+            </ul>
+            <!--
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar ..." aria-label="Buscar ...">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+            </form>
+            <a class="btn btn-outline-success d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">REGISTRATE</a>
+            <a class="btn btn-outline-info d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">INGRESAR</a>
+          -->
+          </div>
+        </div>
+      </nav><div style="height:2px; width:100%;background:red;"></div>
+  </header>
+  <section>
+    <!--CARRUCEL DE IMAGENES-->
+    <!--#492275-->
+    <div id="main" style="background:#4D038C; margin-bottom:40px;">
+      <div class="">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="media/home/img_carrucel/carrucel001.png" alt="First slide">
+            <div class="carousel-caption bgtres">
+              <h3>IUAF</h3>
+              <p>Instituto Universitario de Alta Formación</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="media/home/img_carrucel/carrucel002.png" alt="Second slide">
+            <div class="carousel-caption bgtres">
+              <h3>IUAF</h3>
+              <p>Instituto Universitario de Alta Formación</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="media/home/img_carrucel/carrucel003.png" alt="Third slide">
+            <div class="carousel-caption bgtres">
+              <h3>IUAF</h3>
+              <p>Instituto Universitario de Alta Formación</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="media/home/img_carrucel/carrucel004.png" alt="Fourth slide">
+            <div class="carousel-caption bgtres">
+              <h3>IUAF</h3>
+              <p>Instituto Universitario de Alta Formación</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div>
+    </div>
+    <!-- SECCIÓN TEXTO DE PRESENTACIÓN -->
+    <article class="class" style="background:white;">
+      <div class="jumbotron jumbotron-fluid" >
+        <div class="container">
+          <h2 class="display-4">Conócenos</h2>
+            <div style="padding-left:5%;">
+              <p>El Instituto Universitario ofrece Licenciaturas, Maestría en Derecho, Doctorado en Derecho, Diplomados, Talleres, enfocados principalmente en la rama jurídica y en la rama administrativa.</p>
+              <p>IUAF está enfocado a ofrecer la más alta formación para quienes están comprometidos con ser los mejores.</p>
+            </div>
+          <p><a class="btn btn-primary btn-lg" href="#form" role="button">Solicita más información »</a></p>
+        </div>
+      </div>
+    </article>
+    <!--SECCIÓN VIDEO-->
+    <article class="class bg" style="margin-bottom:3%; padding:3%;">
+      <div class="container">
+        <div class="row">
+          <!-- 21:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/7brAVgycKTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--<iframe width="100%" height="480" src="https://www.youtube.com/embed/Nb3vj9zTHX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+          </div>
+          <div style="height:5px; width:100%;background:red;">
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- SECCIÓN IMAGENES -->
+    <article class="class fondoseccionimagenes">
+      <div class="container">
+          <div class="card-columns">
+            <!--class="card bg-primary" bg-warning bg-success bg-danger bg-light bg-info-->
+            <!--hola-->
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen000.png" alt="Card image">
+                <h5 class="textoimg">Maestría en Derecho</h5>
+              </div>
+              <div class="linered"></div>
+              <div class="card-body">
+                <h4 class="card-title">Maestría en Derecho</h4>
+                <p class="card-text">
+                  <p>Duración 20 meses</p>
+                  <p style="margin: -0px 0;">» Un fin de semana al mes</p>
+                  <p style="margin: -0px 0;">» Expositores de diferentes estados del país</p>
+                  <p style="margin: -0px 0;">» Sesiones teórico - prácticas</p>
+                  <p style="margin: -0px 0;">» Estrategias en los juicios orales civil, familiar y mercantil</p>
+                  <p style="margin: -0px 0;">» Registro y validez oficial (RVOE) 201801MD</p>
+                  <p>» Sistema presencial y a distancia en vivo</p>
+                </p>
+                <a href="cod/mod/menu/ofertas-educativas/maestrias.php" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div><!--hola-->
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen001.png" alt="Card image">
+                <h5 class="textoimg img3">Diplomado en Justicia Para Adolescentes</h5>
+              </div>
+              <div style="height:5px; width:100%;background:red;">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Diplomado en Justicia Para Adolescentes</h4>
+                <p class="card-text">
+                  <p>Objetivo: Garantizar que el proceso al que se encuentre sujeta la persona adolescente en conflicto con la ley penal esté en manos de litigantes y servidores públicos sensibilizados y capacitados respecto a esta realidad, lo que abonará al respeto a los derechos humanos de este sector.</p>
+                </p>
+                <a href="cod/mod/menu/ofertas-educativas/talleres.php" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen003.png" alt="Card image">
+                <div class="linered"></div>
+                <h5 class="textoimg img2">Doctorado En Derecho<h5>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Doctorado En Derecho</h4>
+                <p class="card-text">
+                  <p>Duración 20 meses</p>
+                  <p style="margin: -0px 0;">» Una sesión al mes en sábado</p>
+                  <p style="margin: -0px 0;">» Modelo educativo 100% práctico</p>
+                  <p style="margin: -0px 0;">» Registro y validez oficial (RVOE) 201879DD</p>
+                  <p>» Sistema presencial y a distancia en vivo</p>
+                <a href="cod/mod/menu/ofertas-educativas/doctorado.php" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen004.png" alt="Card image">
+                <h5 class="textoimg img3">Maestría y Doctorado en Derecho Distancia en Vivo</h5>
+              </div>
+              <div style="height:5px; width:100%;background:red;">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Maestría y Doctorado en Derecho Distancia en Vivo</h4>
+                <p class="card-text">
+                  <p>Con nuestro novedoso sistema en línea Usted podrá tomar la sesiones completamente en vivo, interactuar y participar con el docente en tiempo real.</p>
+                </p>
+                <a href="#" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen005.png" alt="Card image">
+                <h5 class="textoimg img3">Diplomado en el Proceso Oral, Civil, Familiar y Mercantil</h5>
+              </div>
+              <div style="height:5px; width:100%;background:red;">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Diplomado en el Proceso Oral, Civil, Familiar y Mercantil</h4>
+                <p class="card-text">
+                  <p><strong>Objetivo:</strong> Sostenemos el modelo de un proceso civil, familiar y mercantil por audiencias, donde el predominio formal sea el de la oralidad.<p>
+                  <p>Trabajaremos en los principios procesales con eficaces colaboradores para arribar al proceso ideal, ya que son los pilares básicos donde descansa el proceso.<p>
+                <a href="#" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="contimg">
+                <img class="card-img-top" src="media/home/img_seccion_imagenes/imagen006.png" alt="Card image">
+                <h5 class="textoimg img3">INCUAF incubadora de negocios</h5>
+              </div>
+              <div style="height:5px; width:100%;background:red;">
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">INCUAF</h4>
+                <p class="card-text"><p>30 minutos • INCUBADORA DE NEGOCIOS</p>
+                  EMPRESAS IUAF es una incubadora de Alto Impacto, fortalece e incentiva a la creación de nuevas empresas competitivas, con una participación más activa de la población, permitiendo a los emprendedores. </p>
+                <a href="cod/mod/menu/incubadora-de-negocios/incuaf.php" class="btn btn-primary">Ver más...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </article>
+    <!-- SECCIÓN CONTACTO-->
+    <article id="form" class="class" style="background:white; padding-top:3%; padding-bottom:3%;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3">
+          </div>
+          <!--CONTENIDO-->
+          <div class="col-sm-8 col-md-8 col-lg-6 col-xl-6">
+            <?php
+            if (!isset($_POST['email'])) { ?>
+              <h2>Informes: </h2>
+              <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                <!--form action="/action_page.php"-->
+                <div class="form-group">
+                  <label for="nombre">Nombre completo:</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" name="nombre">
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div> <!--id name-->
+                <div class="form-group">
+                  <label for="num">Número telefonico:</label>
+                  <input type="texto" class="form-control" id="num" placeholder="ejemplo: +52 9982536750" name="numero">
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="ciudad">Ciudad:</label>
+                  <input type="text" class="form-control" id="ciudad" placeholder="ciudad" name="ciudad">
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" name="email">
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div>
+
+                <!--<form class="form-group" action="/action_page.php">-->
+                <div class="form-group">
+                  <label for="mensaje">Programa Académico:</label>
+                  <select class="form-control" id="mensaje" name="mensaje">
+                    <option value="curso">Curso</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="Maestría">Maestría</option>
+                    <option value="doctorado">Doctorado</option>
+                  </select>
+                  <div style="height:1px; width:100%;background:red;"></div>
+                </div>
+                <!--</form>-->
+                <!--
+                <div class="form-group">
+                  <label for="mensaje">Programa Académico:</label>
+                  <input type="text" class="form-control" id="mensaje" placeholder="programa educativo" name="mensaje">
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div>-->
+                <div class="form-group">
+                  <label for="msg">Mensaje:</label>
+                  <textarea  rows="5" cols="10" class="form-control" id="msg" placeholder="Mensaje: " name="msg"></textarea>
+                  <div style="height:1px; width:100%;background:red;">
+                  </div>
+                </div>
+                <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                <!--agregado de otros botones (prueba)-->
+                <input type="reset" value="Borrar" class="btn btn-primary"/>
+                <input type="submit" value="Enviar" class="btn btn-primary"/>
+              </form>
+            <?php
+            }else{
+              $mensaje="Mensaje del formulario de contacto de e120300168@gmail.com";
+              $mensaje.= "\nNombre: ". $_POST['nombre'];
+              $mensaje.= "\nTelefono: ". $_POST['numero'];
+              $mensaje.= "\nCiudad: ". $_POST['ciudad'];
+              $mensaje.= "\nEmail: ".$_POST['email'];
+              $mensaje.= "\nTema: ".$_POST['mensaje'];
+              $mensaje.= "\nMensaje: ".$_POST['msg'];
+              $destino= "e120300168@gmail.com";
+              $remitente = $_POST['email'];
+              $asunto = "Mensaje enviado por: ".$_POST['nombre'];
+              mail($destino,$asunto,$mensaje,"FROM: $remitente");
+            ?>
+              <p><strong>Mensaje enviado.</strong></p>
+            <?php
+            }
+            ?>
+          </div>
+          <div class="col-sm-2 col-md-2 col-lg-3 col-xl-3">
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section>
+
+  </section>
+  <!-- Footer -->
+  <footer class="page-footer font-small mdb-color pt-4" style="background:#414141; color:#CDD7D3; width:100%">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Instituto Universitario de alta formación</h6>
+          <p> Ofrece Licenciaturas, Diplomados, Doctorado, Maestría en Derecho, Talleres, enfocados principalmente en la rama Jurídica y en la rama administrativa.</p>
+        </div>
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">SITIO WEB</h6>
+          <p>
+            <a href="https://www.sistema.inuaf.com.mx">Sistema IUAF</a>
+          </p>
+          <p>
+            <a href="cod/mod/menu/nuestro-instituto/historia.php">Historia</a>
+          </p>
+          <p>
+            <a href="cod/mod/footer/sitio-web/mapa-del-sitio.php">Mapa del sitio</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">SEGURIDAD Y MARCA</h6>
+          <p>
+            <a href="cod/mod/footer/seguridad-y-marca/declaracion-de-privacidad.php">Declaración de privacidad</a>
+          </p>
+          <p>
+            <a href="cod/mod/footer/seguridad-y-marca/report-copyright-infringement.php">Report Copyright Infringement</a>
+          </p>
+          <p>
+            <a href="cod/mod/footer/seguridad-y-marca/ayuda.php">Ayuda</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+          <p>
+            <i class="fa fa-home mr-3"></i>Boulevard Kukulkan Km 3.5, Plaza Nautilus, Núm. 53, Planta Alta</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i>iuaf.edu@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i>(01998) 2536750</p>
+          <p>
+            <i class="fa fa-print mr-3"></i>Lunes a viernes: 9:00AM a 6:00PM<br/>Sábado: 11:00AM a 3:00PM</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Footer links -->
+      <hr>
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+          <!--Copyright-->
+          <p class="text-center text-md-left">IUAF © 2018 Copyright:
+            <a href="https://www.facebook.com/IuafOficial/">
+              <strong> iuaf.com.mx</strong>
+            </a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+  </footer>
+  <!-- Footer -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

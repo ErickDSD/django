@@ -1,0 +1,82 @@
+{% load staticfiles %}
+<header class="sticky-top">
+        <!-- logo,nombre, buscador -->
+        <nav class="navbar navbar-light " style="background-color: white;">
+          <div class="container">
+            <a class="navbar-brand" style="padding-right:200px;" href="{% url 'index' %}">
+              <img src="{% static 'media/logo000.jpg' %}" width="40" height="40" class="d-inline-block align-top" alt="">
+              IUAF
+            </a>
+          </div>
+        </nav>
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <!--<a class="navbar-brand" href="./"><b>MYSITE</b></a>-->
+              <a class="navbar-brand" src="{% static 'media/logo000.jpg' %}" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    
+    
+    
+                <ul class="navbar-nav mr-auto">
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Ofertas Educativas
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url 'maestria' %}">Maestría</a>
+                      <a class="dropdown-item" href="{% url 'doctorado' %}">Doctorado</a>
+                      <a class="dropdown-item" href="{% url 'empresa' %}">IUAF en tu empresa</a>
+                      <a class="dropdown-item" href="{% url 'cursos' %}">Cursos, Talleres y Seminarios</a>
+                    </div>
+                  </li>
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Nuestro Instituto
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Historia</a>
+                      <a class="dropdown-item" href="{% url 'somos' %}">Quienes somos?</a>
+                      <a class="dropdown-item" href="{% url 'diplomado' %}">Diplomados</a>
+                      <a class="dropdown-item" href="{% url 'ubicacion' %}">Ubicación</a>
+                      <a class="dropdown-item" href="{% url 'mision' %}">Misión / Objetivos / Filosofía Educativa</a>
+                      <!--<a class="dropdown-item" href="../nuestro-instituto/reglamentos.php">Reglamentos</a>-->
+                      <a class="dropdown-item" href="{% url 'profesores' %}">Nuestros Profesores</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'admi' %}">Admisiones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'incuaf' %}">Incubadora de negocios</a>
+                  </li>
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Estudiantes
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="https://sistema.inuaf.com.mx/login">Sistema IUAF</a>
+                      <!--<a class="dropdown-item" href="cod/mod/menu/estudiantes/calendario.php">Calendario</a>-->
+                      <a class="dropdown-item" href="./estudiantes/sistema-de-pagos.php">Sistema de Pagos</a>
+                    </div>
+                  </li>
+                </ul>
+                <!--
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Buscar ..." aria-label="Buscar ...">
+                  <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+                </form>
+                <a class="btn btn-outline-success d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">REGISTRATE</a>
+                <a class="btn btn-outline-info d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">INGRESAR</a>
+              -->
+              </div>
+            </div>
+          </nav><div style="height:2px; width:100%;background:red;"></div>
+      </header>

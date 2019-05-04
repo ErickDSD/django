@@ -1,0 +1,100 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!--<link href="../menusubmenu.css"  rel="stylesheet" type="text/css" />-->
+  <!-- ETIKETA del nombre y linea roja -->
+  <div>
+    <div style="height:2px; width:100%;background:red;"></div>
+    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+    <img class="card-img-top" src="{% static 'media/img_subcategoria/subtaller002.png' %}" alt="Card image" style="width:100%;height:300px;  position: relative;">
+    <!--<div class="container" style="position: absolute; top: 124px; width: 300px; height: 100px; margin-left:100px">
+      <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
+        <div clas="contenedor">
+          <div class="ribbon">
+            <font FACE="verdana">
+              <h4 class="center texto-encima" style="color: white; font-weight:normal; margin-top:3px;"><p>NUESTROS</p>
+                <p style="margin: -11px 0;">PROFESORES</p>
+              </h4>
+            </font>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    </img>
+  </div>
+  <!--TITULO-->
+  <section style="background:#4D038C;margin-bottom:30px;margin-top:30px; padding-left:5%;">
+    <div class="row">
+      <div class="col-md-1 col-lg-1 col-xl-1">
+      </div>
+      <div class="col-md-11 col-lg-11 col-xl-11">
+        <h1 class="text-white">Nuestros Profesores</h1>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:25px; margin-bottom:19px;">
+    <div class="container-fluid">
+      <div class="row">
+        <!--Espacio en blanco-->
+        <div class="col-md-1 col-lg-1 col-xl-1">
+          <aside>
+          </aside>
+        </div>
+        <!--CONTENIDO-->
+        <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8">
+          <article>
+            <div class="container-fluid">
+              <div  style="padding-left:5%;">
+                {% if profesor %}
+                  {% for n in profesor%}
+                    <!--TARGETAS-->
+                    <div class="card bg-light text-dark" style="-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;">
+                      <div class="row" style="padding:15px;">
+                        <div class="col-sm-4 col-md-4 col-lg-2 col-xl-2">
+                          <img class="card-img-top" src="{% static 'media/logo000.jpg' %}" alt="Card image">
+                        </div>
+                        <div class="body col-sm-8 col-md-8 col-lg-10 col-xl-10" style="vertical-align: middle;">
+                          <h2>{{ n.nombre }}</h2>
+                          <div style="height:2px; width:100%;background:red;"></div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <!--<p><font style="color:#4D038C;font-weight:bold;">BIOGRAFIA:</font><br>texto sobre el profesor</p>-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="height:8px"></div>
+                  {% endfor %}
+                {% else %}
+                  <h1>NO HAY REGISTRO</h1>
+                {% endif %}
+                
+              </div>
+            </div>
+          </article>
+          <!--<article class="class" style="background:white;">
+            <div class="jumbotron jumbotron-fluid" >
+              <div class="container">
+                <h2 class="display-4">Conocenos</h2>
+                  <div style="padding-left:5%;">
+                    <p>El Instituto Universitario ofrece a profesionistas la oportunidad de continuar su especialización con Licenciaturas, Doctorado, Maestría en Derecho, Diplomados, Talleres, enfocados principalmente en la rama Jurídica y en la rama administrativa.</p>
+                    <p>Nuestros programas se actualizan constantemente y nuestros docentes son profesionistas certificados, con experiencia en sus áreas y prestigio en él área en que se desenvuelven.</p>
+                    <p>IUAF está enfocado a ofrecer la más alta formación para quienes están comprometidos con ser los mejores.</p>
+                  </div>
+                <p><a class="btn btn-primary btn-lg" href="#form" role="button">Learn more »</a></p>
+              </div>
+            </div>
+          </article>-->
+        </div>
+        <!--ESPACIO DELA PARTE DERECHA DE LA PÁGINA-->
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3" style="background:white; opacity: 0.5;">
+          <aside>
+            <p>Espacio publicitario</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<table>
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Nombre</td>
+      <td>Apellido</td>
+      <td>Edad</td>
+      <td>Telefono</td>
+      <td>Email</td>
+      <td>Domicilio</td>
+    </tr>
+  </thead>
+  <tbody>
+    {% if listado %}
+    {% for n in listado%}
+    <tr>
+      <td>{{ n.id }}</td>
+      <td>{{ n.nombre }}</td>
+      <td>{{ n.apellido }}</td>
+      <td>{{ n.edad }}</td>
+      <td>{{ n.telefono }}</td>
+      <td>{{ n.email }}</td>
+      <td>{{ n.domicilio }}</td>
+    </tr>
+    {% endfor %}
+    {% else %}
+    <h1>NO HAY REGISTRO</h1>
+    {% endif %}
+  </tbody>
+</table>
+{% endblock %}

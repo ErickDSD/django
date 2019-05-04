@@ -1,0 +1,188 @@
+{% extends 'base/base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block content %}
+<div>
+        <div style="height:2px; width:100%;background:red;"></div>
+        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+        <img class="card-img-top" src="{% static 'media/home/img_subcategoria/subtaller002.png' %}" alt="Card image" style="width:100%;height:300px;  position: relative;">
+        <!--<div class="container posbandera">
+          <div class="col-sm-11 col-md-11 col-lg-11 col-xl-11">
+            <div clas="contenedor">
+              <div class="ribbon">
+                <font FACE="verdana">
+                  <h4 class="center texto-encima" style="color: white; font-weight:normal; margin-top:3px;"><p>IUAF EN</p>
+                    <p style="margin: -11px 0;">TU EMPRESA</p>
+                  </h4>
+                </font>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        </img>
+      </div>
+      <!--TITULO-->
+      <section style="background:#4D038C;margin-bottom:30px;margin-top:30px; padding-left:5%;">
+        <div class="row">
+          <div class="col-md-1 col-lg-1 col-xl-1">
+          </div>
+          <div class="col-md-11 col-lg-11 col-xl-11">
+            <h1 class="text-white" style="align:center;">IUAF en tu Empresa</h1>
+          </div>
+        </div>
+      </section>
+    
+      <section style="margin-top:25px; margin-bottom:19px;">
+        <div class="container-fluid">
+          <div class="row">
+            <!--Espacio en blanco-->
+            <div class="col-md-1 col-lg-1 col-xl-1">
+              <aside>
+              </aside>
+            </div>
+            <!--CONTENIDO-->
+            <div class="col-sm-7 col-md-7 col-lg-8 col-xl-8">
+              <article>
+                <div class="container-fluid" style="background:white; padding: 3%; margin-bottom:1%;  -webkit-border-radius: 18px; -moz-border-radius: 18px; border-radius: 18px;">
+                  <p>A través de la Dirección de Programas Especiales, generamos una relación de contacto permanente con las empresas o instituciones para conocer mejor la organización, sus procesos, sus estrategias y sus necesidades. De esta manera podemos diseñar la capacitación para los equipos de trabajo.</p>
+                  <p>El contenido, la duración, el lugar y la forma de impartición de los proyectos de formación que ofrecemos, se definirán de acuerdo a las necesidades específicas de cada organización y a la medida de sus intereses.</p>
+                  <p>Los programas se planean y ejecutan para aumentar la eficiencia, la competitividad, mejorar las áreas de oportunidad, el desarrollo y el crecimiento grupal e individual frente al constante cambio. Los Programas Especiales del IUAF buscan aportar un enfoque estratégico, integrado y práctico.</p>
+                  <div class="row">
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                    </div>
+                    <div class="col-sm-10 col-md-8 col-lg-6">
+                      <div class="container-fluid">
+                        <img class="img-fluid" src="{% static 'media/home/img_tu_empresa/img001.png' %}" alt="Chania" style="vertical-align:middle;"></img>
+                        <div style="height:3px; width:100%;background:red;"></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-lg-3">
+                    </div>
+                  </div>
+                  <br>
+                  <p>Los profesores que imparten los programas son personas especializadas que cuentan con una sólida formación académica, así como reconocida experiencia en el mundo jurídico y de los negocios. El prestigio, la calidad y la seriedad del IUAF, obedece a nuestro elevado claustro de profesores, reconocidos internacionalmente, que ayudarán a que cada vez esté usted más cerca del logro de los objetivos de una Institución o empresa.</p>
+                </div>
+              </article>
+              <article>
+                <div class="container-fluid" style="margin-top:2%; margin-bottom:1%;">
+                  <p class="bottomtexto"><a style="color:white;" href="#form" role="button">REGISTRA TUS DATOS AQUÍ PARA OFRECERTE UNA SOLUCIÓN A LA MEDIDA DE TU EMPRESA</a></p>
+                </div>
+              </article><!--
+              <article class="class" style="background:white;">
+                <div class="jumbotron jumbotron-fluid" >
+                  <div class="container">
+                    <h2 class="display-4">Conocenos</h2>
+                      <div style="padding-left:5%;">
+                        <p>El Instituto Universitario ofrece a profesionistas la oportunidad de continuar su especialización con Licenciaturas, Doctorado, Maestría en Derecho, Diplomados, Talleres, enfocados principalmente en la rama Jurídica y en la rama administrativa.</p>
+                        <p>Nuestros programas se actualizan constantemente y nuestros docentes son profesionistas certificados, con experiencia en sus áreas y prestigio en él área en que se desenvuelven.</p>
+                        <p>IUAF está enfocado a ofrecer la más alta formación para quienes están comprometidos con ser los mejores.</p>
+                      </div>
+                    <p><a class="btn btn-primary btn-lg" href="#form" role="button">Solicita más información »</a></p>
+                  </div>
+                </div>
+              </article>-->
+              <!--CONTANCTO-->
+              <article id="form" class="class" style="background:white; padding-top:3%; padding-bottom:3%;">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2">
+                    </div>
+                    <!--CONTENIDO-->
+                    <div class="col-sm-10 col-md-10 col-lg-8 col-xl-8">
+                      <?php
+                      if (!isset($_POST['email'])) { ?>
+                        <h2>Informes: </h2>
+                        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+                          <!--form action="/action_page.php"-->
+                          <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" name="nombre">
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div> <!--id name-->
+                          <div class="form-group">
+                            <label for="num">Número telefonico:</label>
+                            <input type="texto" class="form-control" id="num" placeholder="ejemplo: +52 9982536750" name="numero">
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="ciudad" name="ciudad">
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" name="email">
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div>
+    
+                          <!--<form class="form-group" action="/action_page.php">-->
+                          <div class="form-group">
+                            <label for="mensaje">Programa Académico:</label>
+                            <select class="form-control" id="mensaje" name="mensaje">
+                              <option value="curso">Curso</option>
+                              <option value="licenciatura">Licenciatura</option>
+                              <option value="Maestría">Maestría</option>
+                              <option value="doctorado">Doctorado</option>
+                            </select>
+                            <div style="height:1px; width:100%;background:red;"></div>
+                          </div>
+                          <!--</form>-->
+                          <!--
+                          <div class="form-group">
+                            <label for="mensaje">Programa Académico:</label>
+                            <input type="text" class="form-control" id="mensaje" placeholder="programa educativo" name="mensaje">
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div>-->
+                          <div class="form-group">
+                            <label for="msg">Mensaje:</label>
+                            <textarea  rows="5" cols="10" class="form-control" id="msg" placeholder="Mensaje: " name="msg"></textarea>
+                            <div style="height:1px; width:100%;background:red;">
+                            </div>
+                          </div>
+                          <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                          <!--agregado de otros botones (prueba)-->
+                          <input type="reset" value="Borrar" class="btn btn-primary"/>
+                          <input type="submit" value="Enviar" class="btn btn-primary"/>
+                        </form>
+                      <?php
+                      }else{
+                        $mensaje="Mensaje del formulario de contacto de e120300168@gmail.com";
+                        $mensaje.= "\nNombre: ". $_POST['nombre'];
+                        $mensaje.= "\nTelefono: ". $_POST['numero'];
+                        $mensaje.= "\nCiudad: ". $_POST['ciudad'];
+                        $mensaje.= "\nEmail: ".$_POST['email'];
+                        $mensaje.= "\nTema: ".$_POST['mensaje'];
+                        $mensaje.= "\nMensaje: ".$_POST['msg'];
+                        $destino= "iuaf.edu@gmail.com";
+                        $remitente = $_POST['email'];
+                        $asunto = "Mensaje enviado por: ".$_POST['nombre'];
+                        mail($destino,$asunto,$mensaje,"FROM: $remitente");
+                      ?>
+                        <p><strong>Mensaje enviado.</strong></p>
+                      <?php
+                      }
+                      ?>
+                    </div>
+                    <div class="col-sm-1 col-md-1 col-lg-2 col-xl-2">
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!--ESPACIO DELA PARTE DERECHA DE LA PÁGINA-->
+            <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3" style="background:white; opacity: 0.5;">
+              <aside>
+                <p>Espacio publicitario</p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+{% endblock %}
