@@ -1,0 +1,20 @@
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+nav .logo img {
+
+  transition: .5;
+}
+nav ul {
+
+  display: flex;
+}
+nav ul li a{
+  transition: .5s;
+}
+nav ul li a.active
+nav ul li a:hover

@@ -1,0 +1,105 @@
+
+.fondoseccionimagenes{
+  background:#4D038C;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.contimg{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.textoimg{
+  position:absolute;
+  top: 50%;
+  left: 25px;
+  color:white;
+}
+.img2{
+  top: 50%;
+}
+.img3{
+  top: 50%;
+}
+.linered{
+  height:5px;
+  width:100%;
+  background:red;
+}
+
+
+
+@media screen and (max-width: 575px) {
+    .textoimg{
+        font-size: 200%;
+        /*color:blue;*/
+    }
+    .img3{
+      top: 46%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .textoimg{
+      font-size: 100%;
+      left: 0px;
+      /*color:green;*/
+  }
+  .img2{
+    top: 38%;
+  }
+  .img3{
+    top: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .textoimg{
+      font-size: 130%;
+      left: 10px;
+      /*color:orange;*/
+  }
+  .img2{
+    top: 39%;
+  }
+  .img3{
+    top: 43%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .textoimg{
+      font-size: 170%;
+      left: 15px;
+      /*color:black;*/
+  }
+  .img3{
+    top: 44%;
+  }
+}
+@media screen and (min-width: 1200px) {
+    .textoimg{
+        font-size: 200%;
+        left: 15px;
+        /*color:grey;*/
+    }
+    .img3{
+      top: 43%;
+    }
+}
+
+/*
+(≥1200px)  .col-lg-
+(≥992px)   .col-md-
+(≥768px)   .col-sm-
+(<768px)   .col-xs-
+
+
+
+/* Small devices (tablets, 768px and up) */
+/*@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) { ... }
