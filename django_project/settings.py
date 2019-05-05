@@ -115,11 +115,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
+    os.path.join(BASE_DIR, "static")
 )
-MEDIA_ROOT = os.path.join(BASE_DIR,'static',)
-STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)),'static')
+# MEDIA_ROOT = os.path.join(BASE_DIR,'static',)
+# STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)),'static')
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
