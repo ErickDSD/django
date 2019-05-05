@@ -114,10 +114,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static")
+  os.path.join(BASE_DIR, 'static/'),
 )
 MEDIA_ROOT = os.path.join(BASE_DIR,'static',)
+print('media:',MEDIA_ROOT)
 # STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)),'static')
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
