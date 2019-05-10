@@ -31,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '03dbc34ec98fa6c544e68d4bfc96ca68'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Discover our IP address
 ALLOWED_HOSTS = ip_addresses()
@@ -116,11 +116,10 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static/'),
+  os.path.join(BASE_DIR, 'static'),
 )
-MEDIA_ROOT = os.path.join(BASE_DIR,'static',)
-
-# STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)),'static')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media',)
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
