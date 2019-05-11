@@ -114,14 +114,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-if not DEBUG: 
-    STATIC_ROOT = '/home/django/http://68.183.170.168/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+# if not DEBUG: 
+#     STATIC_ROOT = '/home/django/http://68.183.170.168/static/'
 
-STATICFILES_DIRS = (
-  os.path.join(BASE_DIR, 'static'),
-)
-MEDIA_ROOT = os.path.join(BASE_DIR,'media',)
-#STATIC_ROOT = os.path.join(BASE_DIR,'static')
+# STATICFILES_DIRS = (
+#   os.path.join(BASE_DIR, 'static'),
+# )
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
