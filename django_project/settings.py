@@ -114,6 +114,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+if not DEBUG: 
+    STATIC_ROOT = '/home/django/http://68.183.170.168/static/'
 
 STATICFILES_DIRS = (
   os.path.join(BASE_DIR, 'static'),
